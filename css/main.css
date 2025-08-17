@@ -1,7 +1,2 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
-@import 'partials/_base.css';
-@import 'partials/_header.css';
-@import 'partials/_gallery.css';
-@import 'partials/_lightbox.css';
-@import 'partials/_about.css';
-@import 'partials/_responsive.css';
+/* All styles are now loaded directly in index.html for better performance and compatibility. */
+/* This file is no longer needed but is kept to prevent a 404 if it's still linked somewhere. */
