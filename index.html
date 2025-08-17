@@ -1,39 +1,82 @@
+<!-- === PASTE THIS ENTIRE BLOCK INTO index.html === -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Viewer</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="data:,">
 </head>
 <body>
     <div class="viewer-container">
         <header class="minimal-header">
             <h1>Billy's Graphic Works</h1>
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="main-nav">
                 <button id="portfolio-nav" class="nav-btn active">Portfolio</button>
+                <button id="photography-nav" class="nav-btn">Photography</button>
                 <button id="about-nav" class="nav-btn">About</button>
             </nav>
-            <div class="view-controls">
-                <button id="grid-view" class="view-btn active">Grid</button>
-                <button id="list-view" class="view-btn">List</button>
-            </div>
         </header>
 
         <main class="content-container">
-            <section class="image-gallery" id="gallery">
-                <!-- Images will be loaded here -->
+            <section class="image-gallery active" id="gallery">
+                <!-- Portfolio images will be loaded here -->
+            </section>
+
+            <section class="image-gallery" id="photography-gallery">
+                <!-- Photography images will be loaded here -->
             </section>
 
             <section class="about-page" id="about-page">
                 <div class="about-content">
                     <h2>About Me</h2>
                     <div class="about-text">
-                        <p>Hi, I'm Billy. I'm 18 and like changing games more than playing them at this point. I find graphic design to be extremely rewarding as it gives you real world experience and teaches you skills.</p>
+                        <p>Hi, I'm Billy. I'm 18 years of age, and I am a self-taught graphic designer from the Midwest U.S.A! I find graphic design to be extremely rewarding as it gives you real-world experience and teaches you valuable skills.</p>
                         
-                        <p>I specialize in graphic design such as police, fire and EMS liveries, which are commonly used within Grand Theft Auto, or similar. I can tackle pretty much any form of digital graphics!</p>
+                        <p>I specialize in graphic design such as police, fire, and EMS liveries, which are commonly used within Grand Theft Auto or similar communities. I can tackle pretty much any form of digital graphics!</p>
                         
-                        <p>I have a keen eye for position and detailing and am often a perfectionist in my craft. I am fully self taught and love to learn, I also make music and play instruments for fun.</p>
+                        <p>I have a keen eye for position and detailing and am often a perfectionist in my craft. I am fully self-taught and love to learn. I also make music and play instruments for fun.</p>
+
+                        <h3>Key Skills & Experience</h3>
+                        <ul>
+                            <li>About six years in the GTA V modding community.</li>
+                            <li>About three years in freelance graphic design.</li>
+                            <li>Specialties include:
+                                <ul>
+                                    <li>Livery creation and replication</li>
+                                    <li>EUP texturing, organization, and addon conversion</li>
+                                    <li>Badge modeling and EUP rigging/ports</li>
+                                    <li>Prop conversions</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>Groups & Affiliations</h3>
+                        <ul>
+                            <li>Marty's Designs</li>
+                            <li>Virtuous Designs</li>
+                            <li>Matrix Designs</li>
+                            <li>Better Mods</li>
+                            <li>ElPancho Designs (Patch Work)</li>
+                        </ul>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Discord Username" onclick="event.preventDefault();">
+                            <span class="social-icon icon-discord"></span>
+                            <span>billytron9000</span>
+                        </a>
+                        <a href="https://github.com/thebillymurrin" class="social-link" target="_blank" rel="noopener noreferrer" title="Visit my GitHub profile">
+                            <span class="social-icon icon-github"></span>
+                            <span>thebillymurrin</span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -55,6 +98,6 @@
         </div>
     </div>
 
-    <script src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 </html>
