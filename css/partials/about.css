@@ -1,0 +1,100 @@
+/* === PASTE THIS ENTIRE BLOCK INTO css/partials/_about.css === */
+
+.about-page {
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+}
+
+.about-content {
+    max-width: 800px;
+    width: 100%;
+    background: var(--bg-secondary);
+    padding: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.about-content h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 1rem;
+}
+
+.about-content h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.about-content ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about-content ul li {
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.about-content ul ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--accent);
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.social-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.social-link:hover {
+    color: var(--text-primary);
+}
+
+.social-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: currentColor;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.icon-discord {
+    -webkit-mask-image: url(../../assets/svg/discord.svg);
+    mask-image: url(../../assets/svg/discord.svg);
+}
+
+.icon-github {
+    -webkit-mask-image: url(../../assets/svg/github.svg);
+    mask-image: url(../../assets/svg/github.svg);
+}
